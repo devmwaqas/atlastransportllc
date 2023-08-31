@@ -1,0 +1,711 @@
+.bg-white {
+	background-color: #fff !important;
+}
+
+.section-title h1 {
+	position: absolute;
+	z-index: 1;
+	font-size: 160px;
+	line-height: 1;
+	opacity: 0.07;
+	top: -28px;
+	left: 0;
+	margin-bottom: 0;
+	-webkit-text-fill-color: transparent;
+	-webkit-text-stroke-width: 2px;
+	font-weight: bold;
+}
+
+.section-title.title-center {
+	text-align: center;
+}
+
+.section-title.title-center h1 {
+	right: 0;
+	margin: 0 auto;
+}
+
+.section-title>span {
+	color: #482ab0;
+	font-weight: 700;
+	font-size: 20px;
+}
+
+.pos-rel {
+	position: relative;
+}
+
+.mapael .map {
+	position: relative;
+}
+
+.mapael .mapTooltip {
+	position: absolute;
+	background-color: #fff;
+	border-radius: 10px;
+	padding: 10px;
+	z-index: 1000;
+	max-width: 200px;
+	display: none;
+	color: #343434;
+	box-shadow: 0 0 10px -4px black;
+}
+
+.mapael .zoomButton {
+	background-color: #fff;
+	border: 1px solid #ccc;
+	color: #000;
+	width: 15px;
+	height: 15px;
+	line-height: 15px;
+	text-align: center;
+	border-radius: 3px;
+	cursor: pointer;
+	position: absolute;
+	top: 0;
+	font-weight: bold;
+	left: 10px;
+
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+/* Reset Zoom button first */
+.mapael .zoomReset {
+	top: 10px;
+}
+
+/* Then Zoom In button */
+.mapael .zoomIn {
+	top: 30px;
+}
+
+/* Then Zoom Out button */
+.mapael .zoomOut {
+	top: 50px;
+}
+
+.portfolio-item-desc {
+	margin-bottom: 30px
+}
+
+.portfolio-item-desc-inner {
+	max-height: 150px;
+	overflow: hidden;
+	position: relative;
+}
+
+.portfolio-item-desc-inner:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	display: block;
+	width: 100%;
+	height: 100px;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(245, 245, 245, 0)), color-stop(100%, #fbfbfb));
+	background: -webkit-linear-gradient(top, rgba(245, 245, 245, 0) 0, #fbfbfb 100%);
+	background: linear-gradient(to bottom, rgba(245, 245, 245, 0) 0, #fbfbfb 100%);
+}
+
+.portfolio-item-desc.is-opened .portfolio-item-desc-inner {
+	max-height: none;
+	overflow: hidden;
+}
+
+.portfolio-item-desc.is-opened .portfolio-item-desc-inner:after {
+	display: none;
+}
+
+.portfolio-item-desc.is-opened .portfolio-item-more-toggle:after {
+	content: attr(data-less-text);
+}
+
+.portfolio-item-desc.is-opened .portfolio-item-more-toggle .fas:before {
+	content: "\f077";
+	font-weight: 900;
+}
+
+/* no-toggle */
+.portfolio-item-desc.no-toggle .portfolio-item-desc-inner {
+	max-height: none;
+	overflow: hidden;
+}
+
+.portfolio-item-desc.no-toggle .portfolio-item-more-toggle {
+	display: none;
+}
+
+.portfolio-item-desc.no-toggle .portfolio-item-desc-inner:after {
+	display: none;
+}
+
+/* when in affix */
+.portfolio-item-content.affixcontent .portfolio-item-desc.is-opened:not(.no-toggle) .portfolio-item-desc-inner {
+	max-height: 35vh;
+	overflow: auto;
+}
+
+.portfolio-entry .pt-cat-desc {
+	font-size: 0.9rem;
+	line-height: 1.8;
+}
+
+.hg-portfolio-carousel .pt-cat-desc {
+	margin-bottom: 30px;
+}
+
+.hg-portfolio-sortable ul#thumbs li .inner-item .moduleDesc {
+	font-size: 0.85rem;
+	color: #777;
+	padding: 0 15px 15px;
+	margin: 15px 0 0;
+	display: block;
+}
+
+.hg-portfolio-sortable ul#thumbs li .inner-item .moduleDesc p {
+	margin-bottom: 10px;
+}
+
+.services_box--modern.sb--hasicon .services_box__desc {
+	margin-left: 100px;
+}
+
+.services_box--boxed .services_box__desc {
+	z-index: 2;
+	position: relative;
+}
+
+.kl-iconbox__desc-wrapper,
+.kl-iconbox__cta-wrapper {
+	margin-top: 0;
+	margin-bottom: 15px;
+}
+
+.kl-iconbox__desc {
+	margin: 0;
+}
+
+.kl-iconbox__desc {
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	font-size: 0.95rem;
+	line-height: 1.7;
+	font-weight: 400;
+	font-style: normal;
+	color: #3e3f3d;
+}
+
+.grid-ibx__desc-wrp {
+	margin-top: 0;
+	margin-bottom: 20px;
+	backface-visibility: hidden;
+	-webkit-filter: blur(0);
+}
+
+.grid-ibx__desc {
+	margin: 0;
+}
+
+.process_steps--style1 .process_steps__step-desc {
+	margin-bottom: 0;
+}
+
+.process_steps--style2 .process_steps__step-desc {
+	color: #888888;
+	margin-bottom: 0;
+}
+
+.recentwork_carousel--2 .recentwork_carousel__desc {
+	margin-bottom: 30px;
+}
+
+.kl-store-page.single-product div.product .kw-details-desc {
+	margin-bottom: 30px;
+}
+
+.team-member .mmb-desc {
+	color: #888;
+	padding: 0 15px;
+}
+
+.kl-cta-ribbon .trisvg path {
+	fill: #4628ab;
+}
+
+.logo-container .logo-infocard .map-link {
+	display: inline-block;
+	border: 1px solid #fff;
+	color: #fff;
+	padding: 5px 9px;
+	font-weight: 600;
+	border-radius: 3px;
+}
+
+.logo-container .logo-infocard .map-link:hover {
+	border: 1px solid rgba(255, 255, 255, .7);
+}
+
+body.boxed-layout .kl-contentmaps__panel {
+	left: 100px;
+}
+
+.map-link>span {
+	margin-top: 2px;
+}
+
+/* World Map Offices */
+.world-map-offices {
+	position: relative;
+}
+
+.world-map-offices>img {
+	opacity: .2;
+}
+
+.world-map-offices .world-office {
+	position: absolute;
+	padding-bottom: 20px;
+	min-width: 7px;
+	min-height: 7px;
+	z-index: 1;
+}
+
+.world-map-offices .world-office:hover {
+	z-index: 2;
+}
+
+.world-map-offices .world-office::before {
+	content: '';
+	width: 7px;
+	height: 7px;
+	background: #f0d228;
+	border-radius: 50%;
+	display: block;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	margin-top: 0;
+	cursor: pointer;
+	z-index: 1;
+}
+
+.world-map-offices .world-office:hover::before,
+.world-map-offices .world-office.selected::before {
+	box-shadow: 0 0 0 4px #fe6060;
+	-webkit-transform: scale(1.5);
+	-ms-transform: scale(1.5);
+	transform: scale(1.5);
+}
+
+.world-map-offices .office-details {
+	color: #7b7b7b;
+	font-size: 12px;
+	font-weight: 600;
+	min-width: 310px;
+	opacity: 0;
+	visibility: hidden;
+	position: relative;
+	left: -3999px;
+	-webkit-transition: opacity .3s ease-in, visibility .3s ease-in;
+	transition: opacity .3s ease-in, visibility .3s ease-in;
+	position: absolute;
+	top: -140px;
+	padding-bottom: 30px;
+}
+
+.world-map-offices .world-office:hover .office-details,
+.world-map-offices .world-office.selected .office-details {
+	opacity: 1;
+	visibility: visible;
+	left: -118px;
+}
+
+.world-map-offices .office-details::before {
+	content: '';
+	position: absolute;
+	left: 120px;
+	bottom: 18px;
+	border-top: 12px solid #FFF;
+	border-right: 12px solid rgba(0, 0, 0, 0);
+}
+
+.world-map-offices .office-content {
+	padding: 7px 25px 0;
+	position: relative;
+	overflow: hidden;
+	min-height: 130px;
+	max-height: 130px;
+	background: #fff;
+	border-radius: 0 2px 2px 0;
+	overflow-y: visible;
+}
+
+.world-map-offices .office-content h5 {
+	color: #1a1c25;
+	text-transform: uppercase;
+	font-size: 1rem;
+	font-weight: bold;
+	margin: 5px 0 7px;
+}
+
+.world-map-offices .office-content p {
+	font-size: 0.9rem;
+}
+
+.world-map-offices .office-content p:last-child {
+	margin-bottom: 0;
+}
+
+.world-map-offices .office-details>a {
+	float: left;
+}
+
+.world-map-offices .office-details>a img {
+	border-radius: 2px 0 0 2px;
+}
+
+/* World Map Trigger Links */
+.world-map-triggers {
+	margin-bottom: 150px;
+	overflow: hidden;
+}
+
+ul.world-map-triggers[data-columns] li {
+	display: inline-block;
+	float: left;
+	margin-left: 20px;
+}
+
+ul.world-map-triggers[data-columns="3"] li {
+	width: -webkit-calc(33.3333% - 20px);
+	width: calc(33.3333% - 20px);
+}
+
+.world-map-triggers .office-name {
+	font-size: 1rem;
+	font-weight: 700;
+	color: #fff;
+	text-decoration: none;
+	line-height: 1.4;
+	padding: 5px 15px;
+	margin-bottom: 5px;
+	display: inline-block;
+	border: 1px solid transparent;
+	border-radius: 3px;
+}
+
+.world-map-triggers .office-name.selected,
+.world-map-triggers .office-name:hover {
+	border-color: #f0d228;
+}
+
+.static-content--fullscreen .th-google_map {
+	height: 100vh !important;
+}
+
+/*** Content Maps */
+.scontent__maps {
+	position: relative;
+}
+
+.th-google_map {
+	width: 100%;
+}
+
+.th-google_map .gmap_marker p {
+	font-size: 1rem !important;
+}
+
+/* Start with the defualt 700px in height but if the viewport
+height is lower than 700, make it 90vh (90% of the viewport) */
+.scontent__maps:not(.static-content--fullscreen) {
+	height: 750px;
+}
+
+@media only screen and (max-height : 700px) {
+	.scontent__maps:not(.static-content--fullscreen) {
+		height: 90vh;
+	}
+
+	#map {
+		width: 100%;
+		height: 700px;
+	}
+}
+
+.scontent__maps.static-content--fullscreen {
+	height: 100vh;
+}
+
+.scontent__maps .static-content__infopop {
+	position: absolute;
+	z-index: 1;
+	right: 15px;
+	bottom: 50px;
+}
+
+.kl-contentmaps__panel {
+	position: absolute;
+	width: 350px;
+	left: calc((100vw - 1170px) / 2);
+	top: 10%;
+	z-index: 1;
+	background: rgba(255, 255, 255, 0.9);
+	border-radius: 3px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+}
+
+.kl-slideshow .kl-contentmaps__panel {
+	top: 180px;
+}
+
+.kl-contentmaps__panel-img {
+	width: 100%;
+	display: block;
+	height: 200px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	-webkit-transition: opacity .2s ease-out, height .3s ease-out;
+	transition: opacity .2s ease-out, height .3s ease-out;
+	opacity: 1;
+}
+
+.kl-contentmaps__panel-img:hover {
+	opacity: .7;
+}
+
+.kl-contentmaps__panel-info {
+	padding: 30px;
+	min-height: 50px;
+	max-height: 350px;
+	overflow: auto;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	color: #343434;
+}
+
+.kl-contentmaps__panel-info-text {
+	max-height: 350px;
+	padding-top: 20px;
+	-webkit-transition: max-height .3s ease-out, padding-top .3s ease-out;
+	transition: max-height .3s ease-out, padding-top .3s ease-out;
+}
+
+.kl-contentmaps__panel-title {
+	font-size: 1.3rem;
+	font-weight: 600;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.kl-contentmaps__linkapp {
+	margin: 20px;
+	display: block;
+}
+
+.kl-contentmaps__panel-tgg {
+	display: block;
+	width: 30px;
+	height: 30px;
+	border: 2px solid #fff;
+	border-radius: 50%;
+	position: absolute;
+	z-index: 1;
+	right: 20px;
+	top: 20px;
+	margin: 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+	opacity: .8;
+	-webkit-transition: opacity .2s ease-out, -webkit-transform .4s ease-out;
+	transition: opacity .2s ease-out, transform .4s ease-out;
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+.kl-contentmaps__panel-tgg:hover {
+	opacity: 1;
+}
+
+.kl-contentmaps__panel-tgg:before,
+.kl-contentmaps__panel-tgg:after {
+	content: '';
+	width: 2px;
+	height: 14px;
+	background: #fff;
+	display: block;
+	transform-origin: 50%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -7px;
+	margin-left: -1px;
+}
+
+.kl-contentmaps__panel-tgg:after {
+	-webkit-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+
+/* Hide panel if checked */
+.is-closed.kl-contentmaps__panel {
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+.is-closed .kl-contentmaps__panel-info-text {
+	max-height: 0;
+	overflow: hidden;
+	padding-top: 0;
+}
+
+.is-closed .kl-contentmaps__panel-img {
+	height: 80px;
+}
+
+.is-closed .kl-contentmaps__panel-tgg {
+	-webkit-transform: rotate(0);
+	-ms-transform: rotate(0);
+	transform: rotate(0);
+}
+
+.scontent__maps.maskcontainer--mask3 .kl-bottommask--mask3 {
+	bottom: -8px;
+}
+
+.kl-slideshow .kl-contentmaps__panel {
+	top: 150px;
+}
+
+.mapcontainer {
+	background: #F8F8F8;
+	padding: 20px;
+	border-radius: 40px;
+	box-shadow: 4px 6px 5px 0px rgba(0, 0, 0, 0.6);
+}
+
+.mapael .map {
+	position: relative;
+
+}
+
+.section-title h2 {
+	font-size: 50px;
+	margin-top: 10px;
+	letter-spacing: -0.3px;
+	font-weight: bold;
+}
+
+.map svg {
+	width: 100%;
+}
+
+.mapael .mapTooltip {
+	position: absolute;
+	background-color: #fff;
+	border-radius: 10px;
+	padding: 10px;
+	z-index: 1000;
+	max-width: 200px;
+	display: none;
+	color: #343434;
+	box-shadow: 0 0 10px -4px black;
+}
+
+/*home-small*/
+.loc_col_sm .kl-contentmaps__panel-info {
+	padding: 10px;
+	min-height: auto;
+}
+
+.loc_col_sm .kl-contentmaps__panel-title {
+	font-size: 15px;
+}
+
+.loc_col_sm .kl-contentmaps__panel:not(.is-closed) .kl-contentmaps__panel-img {
+	height: 125px;
+}
+
+.locations .loc_col .kl-contentmaps__panel {
+	width: calc(100% - 30px);
+	left: 15px;
+	top: 15px;
+}
+
+.mapTooltip h6 {
+	color: #4628ab;
+	font-weight: bold;
+}
+
+.mapTooltip p {
+	line-height: normal;
+}
+
+/* For all zoom buttons */
+.mapael .zoomButton {
+	background-color: #fff;
+	border: 1px solid #ccc;
+	color: #000;
+	width: 15px;
+	height: 15px;
+	line-height: 15px;
+	text-align: center;
+	border-radius: 3px;
+	cursor: pointer;
+	position: absolute;
+	top: 0;
+	font-weight: bold;
+	left: 10px;
+
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+.mapael .zoomReset {
+	top: 10px;
+}
+
+/* Then Zoom In button */
+.mapael .zoomIn {
+	top: 30px;
+}
+
+/* Then Zoom Out button */
+.mapael .zoomOut {
+	top: 50px;
+}
+
+.mapael .mapTooltip {
+	position: absolute;
+	background-color: #fff;
+	border-radius: 10px;
+	padding: 10px;
+	z-index: 1000;
+	max-width: 200px;
+	display: none;
+	color: #343434;
+	box-shadow: 0 0 10px -4px black;
+}
+
+.mapTooltip h6 {
+	color: #4628ab;
+	font-weight: bold;
+}
+
+.mapTooltip p {
+	line-height: normal;
+}
+
+@media (max-width: 378px){
+	.plotLegend{
+		    width: 100%;
+    overflow-x: scroll;
+	}
+}
